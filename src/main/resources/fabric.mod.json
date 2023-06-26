@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "caelblock",
 	"version": "${version}",
-	"name": "Example mod",
+	"name": "Caelblock",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
 		"Me!"
@@ -12,20 +12,17 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"icon": "assets/caelblock/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
-		],
-		"client": [
-			"com.example.ExampleModClient"
+			"io.amydoesmaths.Caelblock"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
+		"caelblock.mixins.json",
 		{
-			"config": "modid.client.mixins.json",
+			"config": "caelblock.client.mixins.json",
 			"environment": "client"
 		}
 	],
@@ -37,5 +34,6 @@
 	},
 	"suggests": {
 		"another-mod": "*"
-	}
+	},
+	"accessWidener": "caelblock.accesswidener"
 }

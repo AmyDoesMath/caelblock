@@ -20,9 +20,10 @@ repositories {
 
 loom {
     splitEnvironmentSourceSets()
+	accessWidenerPath = file("src/main/resources/caelblock.accesswidener")
 
     mods {
-        "modid" {
+        "caelblock" {
             sourceSet sourceSets.main
             sourceSet sourceSets.client
         }
